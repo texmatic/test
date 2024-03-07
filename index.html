@@ -42,5 +42,13 @@
         <button >OPEN   GATE</button>
         <button >OPEN GARAGE</button>
     </div>
+	
+	 <script>
+        // Blokowanie kopiowania tekstu z elementów strony
+        document.addEventListener('copy', function(e) {
+            e.preventDefault(); // Uniemożliwienie domyślnego zachowania zdarzenia kopiowania
+            alert('Kopiowanie tekstu z tej strony jest niedozwolone!');
+        });
+    </script>
 </body>
 </html>
