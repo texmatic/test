@@ -3,11 +3,35 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Strona z przyciskami</title>
+    <title>iRemote</title>
+    <style>
+        body {
+            background-color: red;
+            text-align: center; /* Wyśrodkowanie zawartości w poziomie */
+        }
+
+        .button-container {
+            margin-top: 120px; /* Odstęp od góry */
+        }
+
+        .button-container button {
+            display: block; /* Ustawienie jako bloki, aby były pod sobą */
+            margin: 10px auto; /* Wyśrodkowanie w pionie i poziomie */
+            padding: 15px 200px; /* Rozmiar przycisków */
+            font-size: 18px; /* Rozmiar czcionki */
+            transition: background-color 0.1s; /* Płynne przejście koloru */
+        }
+
+        .button-container button:active {
+            background-color: green; /* Kolor przycisku podczas naciskania */
+        }
+    </style>
 </head>
 <body>
-    <h1>Strona z przyciskami</h1>
-    <button onclick="alert('Wciśnięto pierwszy przycisk!')">Przycisk 1</button>
-    <button onclick="alert('Wciśnięto drugi przycisk!')">Przycisk 2</button>
+    <h1>iRemote</h1>
+    <div class="button-container">
+        <button > GATE </button>
+        <button >GARAGE</button>
+    </div>
 </body>
 </html>
